@@ -20,6 +20,7 @@ You can change the `codes_to_count`, `tags`, and `ignore_tags` variables to incl
 
 ```python
 # Here is where the codes that are to be counted are defined
+(make sure they're in alphabetical order)
 codes_to_count = [
     "Assumption", "Component Behavior", "Constraints", "Decision Rule", "Design Configuration", 
     "Quality Issue", "Requirements", "Solution Benefits and Drawbacks", "Solution Comparison", 
