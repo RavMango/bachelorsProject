@@ -1,10 +1,10 @@
 # Exploring Architectural Knowledge in Open Source System Mailing Lists
 
-This repository contains the dataset (*Quotation Manager9* & *Mailing Threads with AK (Ravi Maingot 2023-08-13)*) as well as the parsing tool (*cooc2.py*).
+This repository contains the dataset (*datasetExported.xlsx* & *dataset.atlproj23*) as well as the parsing tool (*akConceptParser.py*).
 
-## cooc2.py
+## akConceptParser.py
 
-The `cooc2.py` script parses and analyzes the AK concepts within the `Quotation Manager9.xlsx`. 
+The `akConceptParser.py` script parses and analyzes the AK concepts within the `datasetExported.xlsx`. 
 
 ### Features
 
@@ -14,13 +14,23 @@ The `cooc2.py` script parses and analyzes the AK concepts within the `Quotation 
 - **Statistical Analysis**: Perform statistical tests to analyze the significance of the co-occurrences.
 - **Visualization**: Create visual representations of the data distribution and analysis results.
 
+## Requirements
+The script requires the following libraries to be installed:
+
+- `pandas`
+- `numpy`
+- `itertools`
+- `matplotlib`
+- `scipy`
+- `seaborn`
+
 ## Usage 
 
 You can change the `codes_to_count`, `tags`, and `ignore_tags` variables to include the AK concepts and tags you want to analyze. The script will then count the occurrences of these concepts and tags within the dataset.
 
 ```python
 # Here is where the codes that are to be counted are defined
-(make sure they're in alphabetical order)
+# (make sure they're in alphabetical order)
 codes_to_count = [
     "Assumption", "Component Behavior", "Constraints", "Decision Rule", "Design Configuration", 
     "Quality Issue", "Requirements", "Solution Benefits and Drawbacks", "Solution Comparison", 
@@ -37,6 +47,6 @@ ignore_tags = ["tag:notag", "tag:other", "tag:process"]
 The `filename` can also be altered. As long as it is an exported .xlsx file from an Atlas.ti project, the script will be able to parse it.
 ``` python
 if __name__ == "__main__":
-    filename = 'Quotation Manager9.xlsx'
+    filename = 'datasetExported.xlsx'
     counter(filename)
 ```
