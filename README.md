@@ -24,6 +24,12 @@ The script requires the following libraries to be installed:
 - `scipy`
 - `seaborn`
 
+## Technical overview
+![Technical Overview](https://github.com/RavMango/bachelorsProject/blob/main/images/overview.drawio.png?raw=true)
+
+![Technical Overview](https://github.com/RavMango/bachelorsProject/blob/main/images/akConceptParser.drawio.png?raw=true)
+
+
 ## Usage 
 
 You can change the `codes_to_count`, `tags`, and `ignore_tags` variables to include the AK concepts and tags you want to analyze. The script will then count the occurrences of these concepts and tags within the dataset.
