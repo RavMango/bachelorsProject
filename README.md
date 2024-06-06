@@ -25,6 +25,8 @@ The script requires the following libraries to be installed:
 - `seaborn`
 
 ## Technical overview
+Below are figures that provide information the different working parts of the script and how they interact with each other.
+
 ![Technical Overview](https://github.com/RavMango/bachelorsProject/blob/main/images/overview.drawio.png?raw=true)
 
 ![Technical Overview](https://github.com/RavMango/bachelorsProject/blob/main/images/akConceptParser.drawio.png?raw=true)
